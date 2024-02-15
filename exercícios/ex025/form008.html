@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulários</title>
+    <style>
+        fieldset{
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <form action="get" autocomplete="off">
+        <fieldset>
+            <legend>Números</legend>
+            <p>
+                <label for="in1">Nota 1:</label>
+                <input type="text" name="n1" id="in1" min="0" max="10">
+            </p>
+            <p>
+                <label for="in2">Nota 2:</label>
+                <input type="text" name="n2" id="in2" min="0" max="10" required>
+            </p>
+            <p>
+                <label for="in1">Nota 3:</label>
+                <input type="text" name="n3" id="in3" min="0" max="10" required>
+            </p>
+            <p>
+                <label for="in2">Nota 4:</label>
+                <input type="text" name="n4" id="in4" min="0" max="10" required oninput="isoma.innerHTML = (Number(in1.value) + Number(in2.value) + Number(in3.value) + Number(in4.value))/4">
+            </p>
+            <p>
+                <label for="isoma">Média Final: </label>
+                <output name="soma" id="isoma">0</output>
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>

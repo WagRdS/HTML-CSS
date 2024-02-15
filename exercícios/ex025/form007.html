@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <form action="post">
+        <fieldset>
+            <legend>Local</legend>
+            <label for="iestado">Estado:</label>
+            <select name="estado" id="iestado">
+                <optgroup label="Região Sudeste">
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                </optgroup>
+                <optgroup label="Região Nordeste">
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="CE">Ceará</option>
+                </optgroup>
+            </select>
+        </fieldset>
+        <fieldset>
+            <label for="iprof">Qual a sua Profissão:</label>
+            <input type="text" name="prof" id="iprof" list="listprof">
+            <datalist id="listprof">
+                <option>Programador FE</option>
+                <option>Programador UX</option>
+                <option>Programador BE</option>
+                <option>Analista de Sistema</option>
+            </datalist>
+        </fieldset>
+        <fieldset>
+            <legend>Mansagem</legend>
+            <label for="imsg">Escreva a sua mensgem:</label>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </fieldset>
+    </form>
+</body>
+</html>

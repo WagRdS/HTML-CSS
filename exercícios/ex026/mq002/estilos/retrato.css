@@ -1,2 +1,6 @@
 @charset "UTF-8";
 /*-- dispositivo em modo retrato*/
+
+body{
+    background-color: yellow;
+}

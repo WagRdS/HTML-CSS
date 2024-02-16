@@ -1,2 +1,6 @@
 @charset "UTF-8";
 /*-- dispositivo em modo paisagem*/
+
+body{
+    background-color: orange;
+}

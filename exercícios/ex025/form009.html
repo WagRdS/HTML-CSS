@@ -4,23 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulários</title>
+    <style>
+        fieldset{
+            width: 250px;
+            background-color: rgba(0, 0, 255, 0.327);
+            border: 1px solid blue;
+            border-radius: 10px;
+            margin: auto;
+        }
+        legend{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: white;
+            background-color: rgb(0, 0, 255);
+            padding: 3px;
+            border: 1px solid blue;
+            border-radius: 30%;
+        }
+    </style>
 </head>
 <body>
     <form action="get">
-        <p>
-            <label for="inum">Escolha um valor:</label>
-            <input type="range" name="num" id="inum" min="0" max="10" value="5" oninput="ival.innerHTML = Number(inum.value)">
-            <output id="ival">5</output>
-        </p>
-        <p>
-            <label for="iano">Que ano você nasceu?</label>
-            <input type="number" name="ano" id="iano" min="1900" max="2024" oninput="idade.innerHTML = 2024 - Number(iano.value)">
-            <output id="idade">0</output>
-        </p>
-        <p>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
-        </p>
+        <fieldset>
+            <legend>Teste</legend>
+            <p>
+                <label for="inum">Escolha um valor:</label>
+                <input type="range" name="num" id="inum" min="0" max="10" value="5" oninput="ival.innerHTML = Number(inum.value)">
+                <output id="ival">5</output>
+            </p>
+            <p>
+                <label for="iano">Que ano você nasceu?</label>
+                <input type="number" name="ano" id="iano" min="1900" max="2024" oninput="idade.innerHTML = 2024 - Number(iano.value)">
+                <output id="idade">0</output>
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
     </form>
     
 </body>
